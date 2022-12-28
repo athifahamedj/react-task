@@ -157,7 +157,7 @@ function Modal({ setOpenModal }) {
           </button>
           <button>Continue</button> */}
            <div>
-      <button onClick={addDropdown}>+Add new schema</button>
+      <button className="linkcss" onClick={addDropdown}>+Add new schema</button>
       {dropdowns.map(dropdown => (
         <select  onChange={(e) => handleChange(e, 'option2')}
         value={selectedOptions.option1} key={dropdown.id}>
@@ -168,10 +168,10 @@ function Modal({ setOpenModal }) {
       ))}
     </div>
 
-<div className="footer">
-        <button className="btncss">Save segment</button>
-           <button onClick={()=> setOpenModal(false)} className="cancelbtncss">Cancel</button>
-</div>
+    <div className="footer">
+            <button className="btncss">Save segment</button>
+              <button onClick={()=> setOpenModal(false)} className="cancelbtncss">Cancel</button>
+    </div>
      
 
         </div>
