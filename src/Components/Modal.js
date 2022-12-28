@@ -125,7 +125,7 @@ function Modal({ setOpenModal }) {
                     
           {dropdown}
          
-        {/* <Dropdown/> */}
+        <Dropdown/>
         <div>
       <select onChange={(e) => handleChange(e, 'option1')}
         value={selectedOptions.option1}>
